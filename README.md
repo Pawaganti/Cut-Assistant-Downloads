@@ -1,26 +1,28 @@
-# Cut Assistant 下载
+# Cut Assistant｜下载与使用
 
-Cut Assistant 是面向 Windows 和 DaVinci Resolve Studio 的剪辑辅助插件，将常用的时间线、片段、变换、变速、显示与颜色操作集中在一个可调整的面板中。
+Cut Assistant 是适用于 Windows 和 DaVinci Resolve Studio 的剪辑辅助插件。它将常用的时间线、片段、变换、变速、显示与颜色操作集中在可调整的面板中。
 
-**当前版本：1.0.32。**需要 DaVinci Resolve Studio 21.1 或更新版本，不能脱离达芬奇独立运行。
+**此下载页当前提供 v1.0.32。**运行需要 DaVinci Resolve Studio 21.1 或更新版本。
 
 ![Cut Assistant 1.0.32 界面示意](docs/panel-1.0.32.png)
 
-上图由当前版前端源码和模拟状态生成，用于展示面板布局，不代表在真实达芬奇工程中的功能测试。
+图片展示的是模拟状态下的面板布局。
 
 ## 下载与安装
 
-从[最新版本下载页](https://github.com/Pawaganti/Cut-Assistant-Downloads/releases/latest)选择一种方式：
+请从[版本下载页](https://github.com/Pawaganti/Cut-Assistant-Downloads/releases/latest)选择一种方式：
 
-| 安装方式 | 下载文件 | 操作 |
+| 方式 | 文件 | 安装步骤 |
 | --- | --- | --- |
-| 普通安装 | `Cut-Assistant-1.0.32-Installer.zip` | 解压，双击 `安装.cmd`。 |
-| 直接复制 | `Cut-Assistant-1.0.32-Portable.zip` | 解压，将整个 `Fusion` 文件夹复制到达芬奇的 `Support` 目录。 |
+| 脚本安装 | `Cut-Assistant-1.0.32-Installer.zip` | 解压后运行 `安装.cmd`。 |
+| 复制使用 | `Cut-Assistant-1.0.32-Portable.zip` | 解压后将整个 `Fusion` 文件夹复制到达芬奇的 `Support` 目录。 |
 
-两种方式选一种即可。安装路径、首次快捷键配置和使用注意事项见[详细安装说明](docs/安装说明.md)。安装后在达芬奇的 **工作区 → 脚本 → Cut Assistant** 打开。
+**注意：v1.0.32 的两个附件均为 ZIP；`Installer.zip` 使用安装脚本，不是 Windows 安装向导。**请勿同时使用两种方式。具体路径和首次使用步骤见[安装说明](docs/安装说明.md)。
 
-下载页同时提供 `SHA256SUMS.txt`，用于核对文件完整性。运行包内含插件所需代码及资源；本公开仓库只保存使用说明和版本下载，不包含独立的源码归档、个人设置或工程素材。
+安装后，在达芬奇的 **工作区 → 脚本 → Cut Assistant** 打开。下载页提供 `SHA256SUMS.txt`，可用于核对文件完整性。下载包不包含个人设置或工程素材。
 
-## 本版说明
+## 使用提示
 
-助手打开时读取一次当前状态，之后不在后台持续轮询；需要核对时可手动刷新。包内 PDF 手册仍有旧版自动刷新表述，以本版安装说明为准。本次发布已核验安装包内容、校验值与离线界面检查，尚未在真实达芬奇工程中重新完成全功能验收。
+助手打开时读取一次当前状态，之后不会在后台持续轮询。如需立即核对面板数值与高亮，可在主面板空白处右键选择“刷新当前状态”。
+
+随包提供的 PDF 手册中，个别自动刷新说明尚未同步；相关操作以本页的[安装说明](docs/安装说明.md)为准。
